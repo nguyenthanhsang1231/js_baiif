@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhapchieucao</title>
+</head>
+<body>
+<h1>Tính chỉ số cân nặng</h1>
+<span>Nhập cân nặng: (kg)</span>
+<input type="text" id="kg">
+<br>
+<br>
+<span>Nhập chiều cao: (m) </span>
+<input type="text" id="m">
+<br>
+<br>
+<button onclick="kiemtra()">Kiem tra</button>
+<script>
+function kiemtra() {
+    let canNang = +document.getElementById("kg").value;
+    let chieuCao = +document.getElementById("m").value;
+if (canNang < 20 && chieuCao < 1.50) {
+    document.write("m dang thieu can")
+} else if (canNang < 65 && chieuCao < 1.70) {
+    document.write("m co dang ma thang nao cung ao uoc")
+} else if (canNang < 80 && chieuCao < 1.90) {
+    document.write("dang hoa hau cmmr")
+} else if (canNang > 70 && chieuCao < 1.40) {
+    document.write(" m da thua can rui dop it thoi")
+} else 
+        document.write("m la th beo,gay") 
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b2</title>
+</head>
+<body>
+<span style="margin-left: 60px;">Amount</span>
+<span style="margin-left: 60px;">	From Currency		</span>
+<span style="margin-left: 60px;">To Currency	</span>
+<br>
+<input type="text" id="sang">
+<select id="from">
+    <option value="usd">USD</option>
+    <option value="vnd">VND</option>
+</select>
+<select id="to" style="margin-left: 110px;">
+    <option value="usd">USD</option>
+    <option value="vnd">VND</option>
+</select>
+<button style="margin-left: 50px;" onclick="tienvn()">convert</button>
+<p></p>
+<script>
+    function tienvn() {
+        let soNhapVao = +document.getElementById("sang").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        if (from == "vnd" && to == "usd") {
+            let kq = soNhapVao / 23000
+            alert(kq)
+
+        }
+        if (from == "usd" && to == 'vnd') {
+            let kq = soNhapVao * 23000
+            alert(kq)
+        }
+        if (from == to) {
+
+            alert(soNhapVao)
+        }
+
+    }
+
+</script>
+</body>
+</html>

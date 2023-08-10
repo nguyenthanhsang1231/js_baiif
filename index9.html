@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me?</title>
+</head>
+<body>
+<h1>chi co thich Tan Phat khong</h1>
+<div style="margin-left: 70px;">
+    <button onclick="thich()">cuc ki thich</button>
+    <button id="no" style="position: relative; left: 0px; top: 0px;" onmouseover="unthich()">ghet vcl</button>
+</div>
+<script>
+    function thich() {
+        alert("vay thi hay nch voi e ay nhieu vao")
+    }
+    function unthich() {
+        let a =document.getElementById('no');
+        a.style.left = (Math.random() * window.innerWidth) + 'px';
+        a.style.top = (Math.random() * window.innerHeight) + 'px';
+    }
+</script>
+</body>
+</html>
